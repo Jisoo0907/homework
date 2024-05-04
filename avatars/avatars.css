@@ -1,0 +1,37 @@
+.main {
+  width: 400px;
+  display: flow-root;
+  margin: 0 auto;
+  padding: 0 200px;
+}
+img {
+  width: 64px;
+  height: 64px;
+  border-radius: 50%;
+  margin: 10px;
+}
+.img-female img {
+  float: left;
+}
+
+.img-male img:first-child {
+  float: left;
+  clear: left;
+}
+.img-male img:nth-child(n + 2) {
+  float: left;
+}
+.offline,
+.online {
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  border: 1px solid white;
+  float: left;
+}
+.offline {
+  background-color: #dbdbdb;
+}
+.online {
+  background-color: #4cfe88;
+}

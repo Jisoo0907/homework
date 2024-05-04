@@ -1,14 +1,14 @@
 ## Avatars 과제
 
-> float을 이용한 이미지 배치
-> flex 지원 환경의 다른 레이아웃 배치
+> float을 이용한 이미지 배치  
+> flex 지원 환경의 다른 레이아웃 배치  
 > 제출: 5월 4일
 
 ## Avatars Structure
 
-avatars
-┣ avatars.css
-┣ avatars.html
+avatars  
+┣ avatars.css  
+┣ avatars.html  
 ┗ avatars.md
 
 ## 어려웠던 점

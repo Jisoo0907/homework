@@ -9,6 +9,7 @@ img {
   height: 64px;
   border-radius: 50%;
   margin: 10px;
+  position: relative;
 }
 .img-female img {
   float: left;
@@ -32,6 +33,7 @@ img {
   top: 58px;
   right: 28px;
 }
+
 .offline {
   background-color: #dbdbdb;
 }
@@ -40,6 +42,13 @@ img {
 }
 .online-two,
 .offline-four {
-  top: -25px;
+  top: -26px;
   left: 355px;
 }
+
+/* -------------------------------------------------------------------------- */
+/*                          flex를 지원하는 웹브라우저를 위한 스타일                   */
+/* -------------------------------------------------------------------------- */
+/* 
+@supports (display: flex) {
+} */

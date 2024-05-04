@@ -23,15 +23,23 @@ img {
 }
 .offline,
 .online {
-  width: 10px;
-  height: 10px;
+  width: 15px;
+  height: 15px;
   border-radius: 50%;
   border: 1px solid white;
   float: left;
+  position: relative;
+  top: 58px;
+  right: 28px;
 }
 .offline {
   background-color: #dbdbdb;
 }
 .online {
   background-color: #4cfe88;
+}
+.online-two,
+.offline-four {
+  top: -25px;
+  left: 355px;
 }

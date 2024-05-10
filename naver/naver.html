@@ -7,27 +7,28 @@
     <title>로그인</title>
   </head>
   <body>
-    <div role="login-group">
-      <img src="/naver.png" alt="네이버 로고" />
-      <form action="submit">
+    <div role="login-group" class="login">
+      <form action="submit" class="login-form">
+        <img src="/naver.png" alt="네이버 로고" />
         <fieldset>
-          <legend></legend>
-          <div class="userid-input" role="group">
-            <label for="user-id"></label>
-            <input type="text" id="user-id" required />
+          <legend class="sr-only">네이버 회원 로그인 폼</legend>
+          <div class="login-input-group">
+            <div class="userid-input" role="group">
+              <label for="user-id"></label>
+              <input type="text" id="user-id" required />
+            </div>
+            <div class="password-input" role="group">
+              <label for="password"></label>
+              <input type="password" id="password" required />
+            </div>
           </div>
-          <div class="password-input" role="group">
-            <label for="password"></label>
-            <input type="password" id="password" required />
-          </div>
-
           <button type="submit">로그인</button>
         </fieldset>
       </form>
 
-      <div class="form-checkbox">
-        <input type="checkbox" id="save-login" name="save-login" />
-        <label for="save-login">로그인 상태유지</label>
+      <div class="keep-checkbox" role="keeplogin-checkbox">
+        <input type="checkbox" id="keep-login" name="keep-login" />
+        <label for="keep-login">로그인 상태유지</label>
       </div>
     </div>
   </body>

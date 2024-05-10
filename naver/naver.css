@@ -1,0 +1,58 @@
+:root {
+  --font-color: #181818;
+  --spacing: 3.125rem;
+  --focus-color: #24388d;
+}
+
+.login {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 3.125rem;
+
+  /* 로고 */
+  img {
+    margin-top: 1.875rem;
+    background-color: pink;
+    width: 14.375rem;
+    margin-bottom: var(--spacing);
+  }
+
+  /* 로그인 폼 */
+  fieldset {
+    border: none;
+  }
+  .login-form {
+    background-color: tomato;
+    padding: var(--spacing);
+  }
+
+  fieldset {
+    display: flex;
+    flex-flow: column nowrap;
+  }
+
+  .login-input-group {
+    flex-grow: 1;
+    background-color: pink;
+  }
+
+  .keep-checkbox {
+    background-color: lime;
+  }
+}
+
+/* legend 숨김 */
+.sr-only {
+  background-color: red;
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  clip-path: polygon(0 0, 0 0, 0 0);
+  overflow: hidden;
+  padding: 0;
+  white-space: nowrap;
+  border-width: 0;
+}

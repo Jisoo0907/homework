@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="/naver.css" />
+    <title>로그인</title>
+  </head>
+  <body>
+    <div role="login-group">
+      <img src="/naver.png" alt="네이버 로고" />
+      <form action="submit">
+        <fieldset>
+          <legend></legend>
+          <div class="userid-input" role="group">
+            <label for="user-id"></label>
+            <input type="text" id="user-id" required />
+          </div>
+          <div class="password-input" role="group">
+            <label for="password"></label>
+            <input type="password" id="password" required />
+          </div>
+
+          <button type="submit">로그인</button>
+        </fieldset>
+      </form>
+
+      <div class="form-checkbox">
+        <input type="checkbox" id="save-login" name="save-login" />
+        <label for="save-login">로그인 상태유지</label>
+      </div>
+    </div>
+  </body>
+</html>

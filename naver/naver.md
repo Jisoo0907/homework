@@ -7,7 +7,7 @@
 
 ## Naver Structure
 
-![네이버 과제 마크업](/naver_markup.jpg)
+![네이버 과제 마크업](./naver_markup.jpg)
 
 ## 해결 과정
 

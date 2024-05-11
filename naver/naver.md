@@ -7,17 +7,17 @@
 
 ## Naver Structure
 
-📦naver
-┣ 📂icons
-┃ ┣ 📜checked.svg
-┃ ┗ 📜unchecked.svg
-┣ 📜ip-security.png
-┣ 📜ip_security.html
-┣ 📜naver.css
-┣ 📜naver.html
-┣ 📜naver.md
-┣ 📜naver.png
-┗ 📜naver.svg
+naver
+┣ icons
+┃ ┣ checked.svg
+┃ ┗ unchecked.svg
+┣ ip-security.png
+┣ ip_security.html
+┣ naver.css
+┣ naver.html
+┣ naver.md
+┣ naver.png
+┗ naver.svg
 
 ## 해결 과정
 

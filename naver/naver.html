@@ -8,21 +8,38 @@
   </head>
   <body>
     <div role="login-group" class="login">
+      <picture>
+        <img
+          srcset="/naver.png, /naver.svg"
+          src="/naver.png"
+          alt="네이버 로고"
+        />
+      </picture>
+
       <form action="submit" class="login-form">
-        <img src="/naver.png" alt="네이버 로고" />
         <fieldset>
           <legend class="sr-only">네이버 회원 로그인 폼</legend>
           <div class="login-input-group">
             <div class="userid-input" role="group">
               <label for="user-id"></label>
-              <input type="text" id="user-id" required />
+              <input
+                type="text"
+                id="user-id"
+                required
+                placeholder="아이디(이메일)"
+              />
             </div>
             <div class="password-input" role="group">
               <label for="password"></label>
-              <input type="password" id="password" required />
+              <input
+                type="password"
+                id="password"
+                required
+                placeholder="비밀번호"
+              />
             </div>
+            <button type="submit">로그인</button>
           </div>
-          <button type="submit">로그인</button>
         </fieldset>
       </form>
 

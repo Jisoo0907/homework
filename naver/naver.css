@@ -1,49 +1,102 @@
 :root {
   --font-color: #181818;
-  --spacing: 3.125rem;
+  --spacing: 4.375rem;
   --focus-color: #24388d;
+  --white-color: #fff;
+  --spacing-form: 0.625rem;
+  --green: #03cf5d;
+}
+* {
+  box-sizing: border-box;
+  padding: 0;
 }
 
+/* 로고와 로그인 폼 정렬 */
 .login {
   display: flex;
-  flex-direction: column;
+  flex-flow: column nowrap;
   justify-content: center;
   align-items: center;
-  padding: 3.125rem;
+  padding-top: 7.5rem;
 
-  /* 로고 */
-  img {
-    margin-top: 1.875rem;
-    background-color: pink;
-    width: 14.375rem;
+  .logo {
     margin-bottom: var(--spacing);
   }
-
-  /* 로그인 폼 */
-  fieldset {
-    border: none;
-  }
   .login-form {
-    background-color: tomato;
-    padding: var(--spacing);
-  }
-
-  fieldset {
-    display: flex;
-    flex-flow: column nowrap;
+    width: 100%;
   }
 
   .login-input-group {
-    flex-grow: 1;
-    background-color: pink;
+    display: flex;
+    flex-flow: column nowrap;
+    width: 100%;
+    margin: 0 1.25rem;
   }
 
-  .keep-checkbox {
-    background-color: lime;
+  /* 컨테이너 */
+  fieldset {
+    border: 0;
+    display: flex;
+    width: 100%;
+  }
+
+  button {
+    margin-top: var(--spacing-form);
+    height: 2.8125rem;
+    background-color: var(--green);
+    border: 0;
+    color: var(--white-color);
   }
 }
 
-/* legend 숨김 */
+/* 입력 서식 스타일 */
+.login-input-group input {
+  font-size: 0.875rem;
+  padding-left: 0.9375rem;
+  height: 2.8125rem;
+  color: var(--font-color);
+  border: 1px solid #dadada;
+  background-color: var(--white-color);
+  width: 100%;
+  margin-bottom: var(--spacing-form);
+
+  /* 입력 서식 포커스 스타일*/
+  &:focus {
+    outline: 1px solid var(--green);
+    background-color: #e9f0fd;
+  }
+}
+
+/* 로그인 상태유지 체크박스 스타일 */
+.keep-checkbox {
+  display: flex;
+  justify-content: flex-end;
+  position: relative;
+  right: 1.25rem;
+  margin-top: 0.3125rem;
+
+  input {
+    width: 1.5rem;
+    height: 1.5rem;
+    position: absolute;
+    right: 7.5rem;
+    top: -0.125rem;
+    appearance: none;
+  }
+
+  label {
+    background: url(/icons/unchecked.svg) no-repeat 0 0 / contain;
+
+    padding-left: 30px;
+    color: var(--font-color);
+  }
+
+  input:checked + label {
+    background: url(/icons/checked.svg) no-repeat 0 0 / contain;
+  }
+}
+
+/*  숨김 */
 .sr-only {
   background-color: red;
   position: absolute;

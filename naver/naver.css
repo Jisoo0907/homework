@@ -91,20 +91,20 @@ input:focus-visible {
     appearance: none;
   }
 
-  label {
+  .keep-label {
     background: url(/icons/unchecked.svg) no-repeat 0 0 / contain;
-
     padding-left: 1.875rem;
     color: var(--font-color);
   }
 
-  input:checked + label {
+  input:checked + .keep-label {
     background: url(/icons/checked.svg) no-repeat 0 0 / contain;
   }
 }
 /* 768px 이하 디바이스 */
 @media (max-width: 768px) {
-  .ip-security {
+  .security,
+  .security-label {
     display: none;
   }
 }
@@ -126,9 +126,21 @@ input:focus-visible {
     margin: 0.3125rem auto;
     padding-left: 2.5rem;
   }
-  .keep-checkbox input {
+
+  .keep-checkbox .keep {
     position: absolute;
     left: 2.1875rem;
+  }
+  .security:checked + .security-label .status {
+    display: none;
+  }
+
+  .security-label a {
+    text-decoration: none;
+    color: var(--font-color);
+  }
+  .security-label:checked {
+    color: var(--green);
   }
 }
 

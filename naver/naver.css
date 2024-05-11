@@ -10,6 +10,14 @@
   box-sizing: border-box;
   padding: 0;
 }
+*:focus,
+input:focus {
+  outline: 0;
+}
+*:focus-visible,
+input:focus-visible {
+  outline: 2px solid var(--focus-color);
+}
 
 /* 로고와 로그인 폼 정렬 */
 .login {
@@ -87,12 +95,43 @@
   label {
     background: url(/icons/unchecked.svg) no-repeat 0 0 / contain;
 
-    padding-left: 30px;
+    padding-left: 1.875rem;
     color: var(--font-color);
   }
 
   input:checked + label {
     background: url(/icons/checked.svg) no-repeat 0 0 / contain;
+  }
+}
+/* 768px 이하 디바이스 */
+@media (max-width: 768px) {
+  .ip-security {
+    display: none;
+  }
+}
+
+/* 768px 이상 디바이스 */
+@media (min-width: 768px) {
+  .login {
+    fieldset {
+      width: 31.25rem;
+      margin: 0 auto;
+    }
+  }
+
+  .keep-checkbox {
+    justify-content: space-between;
+    width: 31.25rem;
+    margin: 0.3125rem auto;
+    padding-left: 2.5rem;
+  }
+  .keep-checkbox input {
+    position: absolute;
+    left: 2.1875rem;
+  }
+  .ip-security {
+    text-decoration: none;
+    color: var(--font-color);
   }
 }
 

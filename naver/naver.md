@@ -7,17 +7,7 @@
 
 ## Naver Structure
 
-naver
-┣ icons
-┃ ┣ checked.svg
-┃ ┗ unchecked.svg
-┣ ip-security.png
-┣ ip_security.html
-┣ naver.css
-┣ naver.html
-┣ naver.md
-┣ naver.png
-┗ naver.svg
+![네이버 과제 마크업](naver.jpg)
 
 ## 해결 과정
 

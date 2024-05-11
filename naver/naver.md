@@ -16,7 +16,7 @@
 
 - 문제: svg를 지원하는 웹브라우저는 svg 형식으로,그렇지 않은 웹브라우저는 png 형식으로 보여지도록 구현 => 처음에 @supports인가 싶어서 헤맸다.
 
-- 해결: picture 요소의 srcset 사용
+- picture 요소의 srcset 사용
 
 - 레이아웃: 로고 -> img, login -> flex-container로 만든 후 가운데 정렬
 

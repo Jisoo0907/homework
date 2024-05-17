@@ -1,0 +1,32 @@
+@import url(/styles/theme.css);
+@import url(/styles/reset.css);
+@import url(/styles/base.css);
+@import url(/components/button.css);
+
+/* small screen style */
+.card1 {
+  height: var(--size);
+  background: url(/products/ipad_pro.jpeg) no-repeat center;
+}
+.card {
+  display: grid;
+  grid-template-columns: 1fr;
+  place-items: start center;
+
+  .title {
+    font-size: var(--large-text);
+    margin: var(--small-spacing);
+    color: var(--white);
+  }
+  .subtitle {
+    font-size: var(--base-text);
+    color: var(--white);
+    line-height: var(--line-normal);
+    margin-bottom: var(--x-small-spacing);
+  }
+  .release {
+    font-size: var(--small-text);
+    color: var(--gray);
+    margin-bottom: var(--small-spacing);
+  }
+}

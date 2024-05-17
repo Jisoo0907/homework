@@ -3,24 +3,28 @@
 @import url(/styles/base.css);
 @import url(/components/button.css);
 
-/* small screen style */
-.card1 {
-  height: var(--size);
-  background: url(/products/ipad_pro.jpeg) no-repeat center;
-}
-.card {
+/* small screen */
+.card-section {
   display: grid;
   grid-template-columns: 1fr;
-  place-items: start center;
+  gap: 20px;
+}
+
+.card {
+  height: var(--size);
+  display: flex;
+  flex-flow: column nowrap;
+  align-items: center;
+  background: url(/products/ipad_pro.jpeg) no-repeat center;
 
   .title {
     font-size: var(--large-text);
-    margin: var(--small-spacing);
-    color: var(--white);
+    font-weight: 700;
+    margin-bottom: var(--small-spacing);
+    padding-top: var(--large-spacing);
   }
   .subtitle {
     font-size: var(--base-text);
-    color: var(--white);
     line-height: var(--line-normal);
     margin-bottom: var(--x-small-spacing);
   }
@@ -28,5 +32,39 @@
     font-size: var(--small-text);
     color: var(--gray);
     margin-bottom: var(--small-spacing);
+  }
+  button {
+    font-size: var(--xx-small-text);
+  }
+}
+
+/* 카드 글자 색상 */
+.white {
+  color: var(--white);
+}
+.black {
+  color: var(--black);
+}
+
+/* large screen */
+@media (min-width: 1024px) {
+  .card-section {
+    grid-template-columns: 1fr 1fr;
+  }
+
+  .card {
+    .title {
+      font-size: var(--extra-large-text);
+      font-weight: 700;
+      margin-bottom: var(--small-spacing);
+    }
+    .subtitle {
+      font-size: var(--medium-text);
+      line-height: var(--line-normal);
+      margin-bottom: var(--x-small-spacing);
+    }
+    button {
+      font-size: var(--x-small-text);
+    }
   }
 }

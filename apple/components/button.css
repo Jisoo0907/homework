@@ -1,0 +1,69 @@
+@import url(/styles/theme.css);
+@import url(/styles/reset.css);
+@import url(/styles/base.css);
+
+/* 버튼 공통 스타일 */
+button {
+  /* border: 0; */
+  padding: var(--small-spacing) var(--small-spacing);
+  border-radius: 25px;
+  border: 0;
+  background-color: transparent;
+}
+
+/* small screen 버튼 스타일 */
+
+/* 파란 버튼 스타일링 */
+.blue-fill-btn {
+  font-size: var(--xx-small-text);
+  background-color: var(--blue-200);
+  color: var(--white);
+  margin-right: var(--base-spacing);
+}
+.blue-btn {
+  font-size: var(--xx-small-text);
+  background-color: transparent;
+  border: 1px solid var(--blue-200);
+  color: var(--blue-200);
+}
+
+/* 검정 버튼 스타일링 */
+.black-fill-btn {
+  font-size: var(--xx-small-text);
+  background-color: var(--black);
+  color: var(--white);
+  margin-right: var(--base-spacing);
+}
+.black-btn {
+  font-size: var(--xx-small-text);
+  color: var(--black);
+  border: 1px solid var(--black);
+}
+
+/* large screen 버튼 스타일 */
+
+/* 파란 버튼 스타일링 */
+.blue-fill-btn {
+  font-size: var(--x-small-text);
+  margin-right: var(--base-spacing);
+  background-color: var(--blue-200);
+  color: var(--white);
+}
+.blue-btn {
+  font-size: var(--x-small-text);
+  background-color: transparent;
+  border: 1px solid var(--blue-200);
+  color: var(--blue-200);
+}
+/* 검정 버튼 스타일링  */
+.black-fill-btn {
+  font-size: var(--x-small-text);
+  background-color: var(--black);
+  color: var(--white);
+  margin-right: var(--base-spacing);
+}
+.black-btn {
+  font-size: var(--x-small-text);
+  color: var(--black);
+  border: 1px solid var(--black);
+}

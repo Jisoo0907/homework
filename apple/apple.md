@@ -54,17 +54,16 @@
 - 따라서 `button`과 `card` 컴포넌트를 따로 만들었다.
 - **button**은 다음과 같이 작성함
 
-  ```html:button.html
-
+  ```html
   <body>
-      <div class="button-group">
-        <button type="button" class="blue-fill-btn">더 알아보기</button>
-        <button type="button" class="blue-btn">가격 보기</button>
-      </div>
-    </body>
+    <div class="button-group">
+      <button type="button" class="blue-fill-btn">더 알아보기</button>
+      <button type="button" class="blue-btn">가격 보기</button>
+    </div>
+  </body>
   ```
 
-  ```css:button.css
+  ```css
   /* 버튼 공통 스타일 */
   button {
     padding: var(--small-spacing) var(--small-spacing);
@@ -118,128 +117,124 @@
   ![image](https://github.com/Jisoo0907/homework/assets/102653945/f802c94b-49d3-40df-a499-021165402ae3)
 - **card**는 다음과 같이 작성함
 
-  ```html:card.html
-
+  ```html
   <body>
-      <section class="card-section">
-        <article class="card">
-          <h1 class="title white">Apple</h1>
-          <h2 class="subtitle white">
-            놀라우리만치 얇다.<br />엄청나게 강력하다.
-          </h2>
-          <div class="release">출시일 추후 공개</div>
-          <div class="button-group" role="group">
-            <button type="button blue" class="sm blue-fill-btn">
-              더 알아보기
-            </button>
-            <button type="button" class="sm blue-btn">가격 보기</button>
-          </div>
-        </article>
-      </section>
-    </body>
+    <section class="card-section">
+      <article class="card">
+        <h1 class="title white">Apple</h1>
+        <h2 class="subtitle white">
+          놀라우리만치 얇다.<br />엄청나게 강력하다.
+        </h2>
+        <div class="release">출시일 추후 공개</div>
+        <div class="button-group" role="group">
+          <button type="button blue" class="sm blue-fill-btn">
+            더 알아보기
+          </button>
+          <button type="button" class="sm blue-btn">가격 보기</button>
+        </div>
+      </article>
+    </section>
+  </body>
   ```
 
-  ```css:card.css
-
+  ```css
   /* small screen */
   .card-section {
-  display: grid;
-  grid-template-columns: 1fr;
-  gap: 20px;
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 20px;
   }
   .card {
-  height: var(--size);
-  display: flex;
-  flex-flow: column nowrap;
-  align-items: center;
-  background: url(/products/ipad_pro.jpeg) no-repeat center;
+    height: var(--size);
+    display: flex;
+    flex-flow: column nowrap;
+    align-items: center;
+    background: url(/products/ipad_pro.jpeg) no-repeat center;
 
-  .title {
-    font-size: var(--large-text);
-    font-weight: 700;
-    margin-bottom: var(--small-spacing);
-    padding-top: var(--large-spacing);
-  }
-  .subtitle {
-    font-size: var(--base-text);
-    line-height: var(--line-normal);
-    margin-bottom: var(--x-small-spacing);
-  }
-  .release {
-    font-size: var(--small-text);
-    color: var(--gray);
-    margin-bottom: var(--small-spacing);
-  }
-  button {
-    font-size: var(--xx-small-text);
-  }
-  }
-  /* 카드 글자 색상 */
-  .white {
-  color: var(--white);
-  }
-  .black {
-  color: var(--black);
-  }
-  /* large screen */
-  @media (min-width: 1024px) {
-  .card-section {
-    grid-template-columns: 1fr 1fr;
-  }
-
-  .card {
     .title {
-      font-size: var(--extra-large-text);
+      font-size: var(--large-text);
       font-weight: 700;
       margin-bottom: var(--small-spacing);
+      padding-top: var(--large-spacing);
     }
     .subtitle {
-      font-size: var(--medium-text);
+      font-size: var(--base-text);
       line-height: var(--line-normal);
       margin-bottom: var(--x-small-spacing);
     }
+    .release {
+      font-size: var(--small-text);
+      color: var(--gray);
+      margin-bottom: var(--small-spacing);
+    }
     button {
-      font-size: var(--x-small-text);
+      font-size: var(--xx-small-text);
     }
   }
+  /* 카드 글자 색상 */
+  .white {
+    color: var(--white);
+  }
+  .black {
+    color: var(--black);
+  }
+  /* large screen */
+  @media (min-width: 1024px) {
+    .card-section {
+      grid-template-columns: 1fr 1fr;
+    }
+
+    .card {
+      .title {
+        font-size: var(--extra-large-text);
+        font-weight: 700;
+        margin-bottom: var(--small-spacing);
+      }
+      .subtitle {
+        font-size: var(--medium-text);
+        line-height: var(--line-normal);
+        margin-bottom: var(--x-small-spacing);
+      }
+      button {
+        font-size: var(--x-small-text);
+      }
+    }
   }
   ```
 
 - 결과 화면
-  ![image](https://github.com/Jisoo0907/homework/assets/102653945/7696a226-61ed-412c-8144-15033af346c1){: width="250" height="200"}
+  ![image](https://github.com/Jisoo0907/homework/assets/102653945/7696a226-61ed-412c-8144-15033af346c1)
 
 - apple.html 파일에 위 카드들을 7개 만들어 각각의 내용에 맞게 수정함
 - 코드의 일부
 
-  ```html:apple.html
-
+  ```html
   <section class="card-section">
-      <article class="card card1">
-        <h1 class="title white">iPad Pro</h1>
-        <h2 class="subtitle white">
-          놀라우리만치 얇다.<br />엄청나게 강력하다.
-        </h2>
-        <p class="release">출시일 추후 공개</p>
-        <div class="button-group" role="group">
-          <button type="button" class="blue-fill-btn">더 알아보기</button>
-          <button type="button" class="blue-btn">가격 보기</button>
-        </div>
-      </article>
+    <article class="card card1">
+      <h1 class="title white">iPad Pro</h1>
+      <h2 class="subtitle white">놀라우리만치 얇다.<br />엄청나게 강력하다.</h2>
+      <p class="release">출시일 추후 공개</p>
+      <div class="button-group" role="group">
+        <button type="button" class="blue-fill-btn">더 알아보기</button>
+        <button type="button" class="blue-btn">가격 보기</button>
+      </div>
+    </article>
 
-      <article class="card card2">
-        <h1 class="title black">iPad air</h1>
-        <h2 class="subtitle">
-          두 가지 사이즈, 더 빠른 칩.<br />무엇이든 거뜬하게.
-        </h2>
-        <p class="release">출시일 추후 공개</p>
-        <div class="button-group" role="group">
-          <button type="button" class="black-fill-btn">더 알아보기</button>
-          <button type="button" class="black-btn">가격 보기</button>
-        </div>
-      </article>
+    <article class="card card2">
+      <h1 class="title black">iPad air</h1>
+      <h2 class="subtitle">
+        두 가지 사이즈, 더 빠른 칩.<br />무엇이든 거뜬하게.
+      </h2>
+      <p class="release">출시일 추후 공개</p>
+      <div class="button-group" role="group">
+        <button type="button" class="black-fill-btn">더 알아보기</button>
+        <button type="button" class="black-btn">가격 보기</button>
+      </div>
+    </article>
+  </section>
   ```
 
-  ```css:apple.css
+  ```css
   /* small screen */
   .card-section {
     .card1 {

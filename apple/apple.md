@@ -4,6 +4,8 @@
 
 ![image](https://github.com/Jisoo0907/homework/assets/102653945/1211b466-4e15-4afa-91cb-4a38f90fa0c2)
 
+<img src="https://github.com/Jisoo0907/homework/assets/102653945/d3e504f1-a073-4977-9c5f-bb750f1dccc7" width="300" height="300">
+
 - 제품 광고는 일종의 콘텐츠 영역이라 **전체 영역**을 `section`태그로 묶음
 - 각 제품 광고는 독립적인 콘텐츠 항목이라 **각 카드 영역**을 `article`태그로 묶음
 - 상단의 **제목**은 제품명을 뜻하므로 `h1`태그로 묶음

@@ -105,10 +105,8 @@
         </h2>
         <div class="release">출시일 추후 공개</div>
         <div class="button-group" role="group">
-          <button type="button blue" class="sm blue-fill-btn">
-            더 알아보기
-          </button>
-          <button type="button" class="sm blue-btn">가격 보기</button>
+          <button type="button blue" class="blue-fill-btn">더 알아보기</button>
+          <button type="button" class="blue-btn">가격 보기</button>
         </div>
       </article>
     </section>
@@ -128,7 +126,7 @@
     flex-flow: column nowrap;
     align-items: center;
     background: url(/products/ipad_pro.jpeg) no-repeat center;
-
+    /* 사진의 중앙 부분이 보이도록 함 */
     .title {
       font-size: var(--large-text);
       font-weight: 700;
@@ -159,7 +157,7 @@
   /* large screen */
   @media (min-width: 1024px) {
     .card-section {
-      grid-template-columns: 1fr 1fr;
+      grid-template-columns: 1fr 1fr; /* 1024px 넘어갔을 때 열이 두 개가 되도록 */
     }
 
     .card {
@@ -217,7 +215,7 @@
   .card-section {
     .card1 {
       background: url(/products/ipad_pro_2x.jpeg) no-repeat center;
-      background-size: cover;
+      background-size: cover; /* 페이지를 늘렸을 때 사진도 같이 커지도록 */
     }
     .card2 {
       background: url(/products/ipad_air_2x.jpeg) no-repeat center;
@@ -278,6 +276,7 @@
 - 마지막 과제라는 게 아쉬울 만큼 재밌었다.
 - 물론 과제 수행에 엄청 오랜 시간이 걸렸지만...
 - 내가 그리드를 제대로 이해하지 못했음을 깨달았다.(사실 지금도 완벽히 이해하진 못했다.)
+- 과제를 하면서 조금씩 이해되는 것 같다. (처음에는 display: grid를 어디에 넣어야 하는지 조차 헷갈렸다.)
 - 그리고 과제를 시작한 지 8시간 정도 지났을 무렵, 마크업에 문제가 있음을 알아차렸다.
 - 초반엔 `div.container>section>article`이런 식으로 작성했다.
 - 그랬더니 화면을 늘렸을 때 한 줄에 카드가 두 개가 되지 않고 한 개의 카드 내에서 제목과 텍스트들이 양쪽으로 갈라졌다.

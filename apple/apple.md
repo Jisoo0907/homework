@@ -1,31 +1,8 @@
 # apple 제품 카드
 
-### Apple Structure
-
-**apple**
-┣ **components**
-┃ ┣ button.css
-┃ ┣ button.html
-┃ ┣ card.css
-┃ ┗ card.html
-┣ **favicon**
-┃ ┗ apple-favicon.svg
-┣ **products**
-┃ ┗ 제품 이미지들
-┣ **styles**
-┃ ┣ .DS_Store
-┃ ┣ apple.css
-┃ ┣ base.css
-┃ ┣ grid.css
-┃ ┣ reset.css
-┃ ┗ theme.css
-┣ .DS_Store
-┣ apple.html
-┗ apple.md
-
 ### Apple 마크업
 
-![image](https://github.com/Jisoo0907/homework/assets/102653945/1211b466-4e15-4afa-91cb-4a38f90fa0c2){: width="300" height="300"}
+![image](https://github.com/Jisoo0907/homework/assets/102653945/1211b466-4e15-4afa-91cb-4a38f90fa0c2)
 
 - 제품 광고는 일종의 콘텐츠 영역이라 **전체 영역**을 `section`태그로 묶음
 - 각 제품 광고는 독립적인 콘텐츠 항목이라 **각 카드 영역**을 `article`태그로 묶음
@@ -115,6 +92,7 @@
 
 - 결과 화면
   ![image](https://github.com/Jisoo0907/homework/assets/102653945/f802c94b-49d3-40df-a499-021165402ae3)
+  <br/>
 - **card**는 다음과 같이 작성함
 
   ```html
@@ -203,7 +181,7 @@
   ```
 
 - 결과 화면
-  ![image](https://github.com/Jisoo0907/homework/assets/102653945/7696a226-61ed-412c-8144-15033af346c1)
+  ![image](https://github.com/Jisoo0907/homework/assets/102653945/97b81179-824d-4b2d-93f9-c8fa2b3bfcd3)
 
 - apple.html 파일에 위 카드들을 7개 만들어 각각의 내용에 맞게 수정함
 - 코드의 일부

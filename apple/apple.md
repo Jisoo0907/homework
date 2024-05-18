@@ -18,13 +18,13 @@
 - 중복된 요소를 하나의 컴포넌트로 만들면 편하겠다고 생각함
 - 처음 봤을 때 눈에 띄었던 건 버튼 두 개와 각각의 카드 구조였음
 
-  > **버튼**
+  > **버튼**<br/>
   > 채워진 파란색 버튼 <br/>
   > 빈 파란색 버튼 <br/>
   > 채워진 검정색 버튼 <br/>
   > 빈 검정색 버튼<br/>
 
-  > **카드**
+  > **카드**<br/>
   > 제목, 부제목, 텍스트 단락, 버튼 <br/>
   > 구조가 모두 똑같고 텍스트만 다름<br/>
 
@@ -90,7 +90,7 @@
   }
   ```
 
-- 결과 화면
+- 결과 화면<br/>
   ![image](https://github.com/Jisoo0907/homework/assets/102653945/f802c94b-49d3-40df-a499-021165402ae3)
   <br/>
 - **card**는 다음과 같이 작성함
@@ -180,7 +180,7 @@
   }
   ```
 
-- 결과 화면
+- 결과 화면<br/>
   ![image](https://github.com/Jisoo0907/homework/assets/102653945/97b81179-824d-4b2d-93f9-c8fa2b3bfcd3)
 
 - apple.html 파일에 위 카드들을 7개 만들어 각각의 내용에 맞게 수정함
@@ -265,8 +265,8 @@
 ### 최종 결과 화면
 
 - 1024px **이하**일 때 화면
-  ![짤1](https://github.com/Jisoo0907/homework/assets/102653945/786c3472-7abc-4403-954e-fa16df424a00)
+  ![짤1](https://github.com/Jisoo0907/homework/assets/102653945/786c3472-7abc-4403-954e-fa16df424a00)<br/>
 - 1024px **이상**일 때 화면(세 번째 사진의 **배경 이미지 변화**)
-  ![짤2](https://github.com/Jisoo0907/homework/assets/102653945/6f154865-ced5-4a7c-8499-acccffcef549)
+  ![짤2](https://github.com/Jisoo0907/homework/assets/102653945/6f154865-ced5-4a7c-8499-acccffcef549)<br/>
 - 화면 크기를 늘릴 때 **사진도 같이 커지는** 모습
   ![3](https://github.com/Jisoo0907/homework/assets/102653945/8c6ffa0f-4af5-436b-9975-29cf9208b714)
